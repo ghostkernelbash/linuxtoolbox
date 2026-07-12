@@ -17,7 +17,7 @@ do
     echo "6) Show free disk space"
     echo "7) Show memory usage"
     echo "8) Show CPU Information"
-
+    echo "9) Security Tools"
     read -p "Choose an option: " choice
 
     case $choice in
@@ -53,7 +53,14 @@ do
         read -p "Press Enter to continue..."
         ;;
        
-            4)
+    9)
+    echo
+    echo "Security Tools"
+    echo "--------------"
+    echo "Coming soon..."
+    echo
+    read -p "Press Enter to continue..."
+    ;;        4)
         echo "Goodbye!"
         exit
         ;;
