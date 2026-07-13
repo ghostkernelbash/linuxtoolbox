@@ -1,4 +1,13 @@
 #!/bin/bash
+show_cpu_info() {
+    clear
+    echo "==============================="
+    echo " CPU Information"
+    echo "==============================="
+    lscpu
+    echo
+    read -p "Press Enter to continue..."
+}
 
 while true
 do
@@ -45,13 +54,10 @@ do
         7) free -g
             ;;
         8)
-        echo
-        echo "CPU Information"
-        echo "---------------"
-        lscpu
-        echo
-        read -p "Press Enter to continue..."
-        ;;
+       
+    show_cpu_info
+    ;;
+       
        
     9)
     echo
